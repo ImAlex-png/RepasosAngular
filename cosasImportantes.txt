@@ -1,2 +1,5 @@
 AQUI VOY A APUNTAR COSAS IMPORTANTES PARA NO OLVIDARME DE JAVASCRIPT Y COSAS DE ANGULAR
 
+Arrays:
+
+let fruits : string[] = ["apple","orange","banana"];
