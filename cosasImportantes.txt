@@ -1,5 +1,59 @@
 AQUI VOY A APUNTAR COSAS IMPORTANTES PARA NO OLVIDARME DE JAVASCRIPT Y COSAS DE ANGULAR
 
-Arrays:
+----------Arrays:----------------
 
+-------Asi declaramos un array:--------
 let fruits : string[] = ["apple","orange","banana"];
+
+--------Ver que hay en cada indice:--------
+console.log(fruits[0]);
+console.log(fruits[1]);
+console.log(fruits[2]);
+
+--------Cambiar que hay en un indice:---------
+fruits[1] = "coconut";
+
+-------Meter un elemento al final:---------
+fruits.push("coconut");
+
+---------Quitar el ultimo elemento:---------
+fruits.pop();
+
+----------Meter elemento al principio del array:----------
+fruits.unshift("mango");
+
+----------------Quitar el primer elemento:-----------------
+fruits.shift();
+
+-------------Ver la longitud:----------------
+let numerosFrutas = fruits.lenght;
+
+------------Ver en que indice hay algo que queremos----------------:
+let index = fruits.indexOf("orange")
+
+console.log(index) -> va a salir indice 1 por consola ( indice donde este el elemento, si no lo encuentra devuelve -1 )
+
+--------------Mostrar todos los elementos de un array:--------------
+
+for(let i : number = 0; i < fruits.lenght; i++){
+    console.log(fruits[i]) -> ( Se pone el 'i' ya que cada vez que se recorre una vez para cada valor, la 'i' toma ese valor de lo que haya en el array )
+}
+
+-----------Tambien se puede hacer con este for--------
+
+for(let fruit of fruits){
+    console.log(fruits[i]) -> ( Se pone el 'i' ya que cada vez que se recorre una vez para cada valor, la 'i' toma ese valor de lo que haya en el array )
+}
+
+
+--------------AL REVES SERIA ASI:--------------------
+
+for(let i : number = fruits.lenght-1; i >= 0 ; i--){
+    console.log(fruits[i]) -> ( Se pone el 'i' ya que cada vez que se recorre una vez para cada valor, la 'i' toma ese valor de lo que haya en el array )
+}
+
+--------------Organizarlos en orden alfabetico:----------
+fruits.sort();
+
+--------------Organizarlos en orden alfabetico al reves:----------
+fruits.sort().reverse();
